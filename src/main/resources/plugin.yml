@@ -1,0 +1,6 @@
+name: OreExtraction
+version: '${project.version}'
+main: it.icewolf23x.plugins.oreextraction.OreExtraction
+author: icewolf23x
+description: Ore Extraction Plugin
+api-version: '1.20'
