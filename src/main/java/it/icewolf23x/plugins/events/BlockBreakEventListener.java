@@ -79,16 +79,16 @@ public class BlockBreakEventListener implements Listener {
             return;
         }
 
-        if (!event.getPlayer().getItemInHand().getType().toString().contains("PICKAXE")) {
+        if (!event.getPlayer().getInventory().getItemInMainHand().getType().toString().contains("PICKAXE")) {
             return;
         }
 
-        if (event.getPlayer().getItemInHand().getEnchantments().containsKey(Enchantment.SILK_TOUCH)) {
+        if (event.getPlayer().getInventory().getItemInMainHand().getEnchantments().containsKey(Enchantment.SILK_TOUCH)) {
             return;
         }
 
         String blockId = event.getBlock().getType().toString();
-        Collection<ItemStack> drops = event.getBlock().getDrops(event.getPlayer().getItemInHand());
+        Collection<ItemStack> drops = event.getBlock().getDrops(event.getPlayer().getInventory().getItemInMainHand());
         Player player = event.getPlayer();
 
         if (Arrays.asList(stone).contains(blockId.toLowerCase())) {
