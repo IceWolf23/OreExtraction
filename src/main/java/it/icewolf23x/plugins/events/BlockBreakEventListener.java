@@ -88,7 +88,7 @@ public class BlockBreakEventListener implements Listener {
         }
 
         String blockId = event.getBlock().getType().toString();
-        Collection<ItemStack> drops = event.getBlock().getDrops();
+        Collection<ItemStack> drops = event.getBlock().getDrops(event.getPlayer().getItemInHand());
         Player player = event.getPlayer();
 
         if (Arrays.asList(stone).contains(blockId.toLowerCase())) {
