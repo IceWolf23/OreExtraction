@@ -6,7 +6,7 @@
 
     <groupId>it.icewolf23x.plugins</groupId>
     <artifactId>OreExtraction</artifactId>
-    <version>0.1-1.20.1</version>
+    <version>1.1-1.20.1</version>
     <packaging>jar</packaging>
 
     <name>OreExtraction</name>
