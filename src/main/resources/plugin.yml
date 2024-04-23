@@ -4,3 +4,7 @@ main: it.icewolf23x.plugins.oreextraction.OreExtraction
 author: icewolf23x
 description: Ore Extraction Plugin
 api-version: '1.20'
+
+permissions:
+  oreextraction.use:
+    description: Allows you to use the ore extraction
