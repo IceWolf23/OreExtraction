@@ -1,6 +1,5 @@
-package it.icewolf23x.plugins.events;
+package it.icewolf23x.plugins.oreextraction.events;
 
-import it.icewolf23x.plugins.events.utils.PermUtils;
 import it.icewolf23x.plugins.oreextraction.OreExtraction;
 import org.bukkit.*;
 import org.bukkit.block.Block;
@@ -71,7 +70,8 @@ public class BlockBreakEventListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onBlockBreak(BlockBreakEvent event) {
 
-        if (!PermUtils.hasPermission(event.getPlayer(), "oreexcavation.use")) {
+
+        if (!event.getPlayer().hasPermission("oreexcavation.use")) {
             return;
         }
 

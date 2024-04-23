@@ -1,4 +1,4 @@
-package it.icewolf23x.plugins.oreextraction;
+package it.icewolf23x.plugins.oreextraction.utils;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;

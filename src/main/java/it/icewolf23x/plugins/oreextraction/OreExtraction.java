@@ -1,9 +1,9 @@
 package it.icewolf23x.plugins.oreextraction;
 
-import it.icewolf23x.plugins.events.BlockBreakEventListener;
-import net.luckperms.api.LuckPerms;
+import it.icewolf23x.plugins.oreextraction.events.BlockBreakEventListener;
+import it.icewolf23x.plugins.oreextraction.utils.BroadUtils;
+import it.icewolf23x.plugins.oreextraction.utils.MessageUtils;
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class OreExtraction extends JavaPlugin {
@@ -16,17 +16,6 @@ public final class OreExtraction extends JavaPlugin {
         new BlockBreakEventListener(this);
         BroadUtils.send(Bukkit.getConsoleSender(), MessageUtils.format("§fPlugin loaded successfully"));
 
-    }
-
-
-
-
-    public static LuckPerms getLuckPermsApi() {
-        RegisteredServiceProvider<LuckPerms> provider = Bukkit.getServer().getServicesManager().getRegistration(LuckPerms.class);
-        if (provider != null) {
-            return provider.getProvider();
-        }
-        return null;
     }
 
     @Override
