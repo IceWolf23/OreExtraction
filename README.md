@@ -1,5 +1,5 @@
 
-Source Code: https://github.com/IceWolf23/OreExtraction
+Modrinth: https://modrinth.com/plugin/oreextraction
 
 Telegram Group: https://t.me/IceWolfCodding
 
